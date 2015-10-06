@@ -1,0 +1,209 @@
+<html>
+	<head>
+<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="bootstrap.min.js"></script>
+
+    <script>
+	
+	    var imgPath=["Image/chanpa.jpg","Image/me.jpg","Image/group.jpg","Image/images.jpg"];
+	 
+	 var index=0;
+	 
+	function next()
+	{
+	  
+	  index=index+1;
+	  
+	  if(index>3)
+	  {
+	    index=0;
+	  
+	 }
+	 console.log(index,imgPath[index]);
+	 
+	 var imagTag=document.getElementById("pic");
+	 
+	 imagTag.src= imgPath[index];
+	  
+	
+	}
+	
+	
+	function privious()
+	{
+	  
+	  index=index-1;
+	  
+	  if(index<0)
+	  {
+	    index=3;
+	  
+	 }
+	 console.log(index,imgPath[index]);
+	 
+	 var imagTag=document.getElementById("pic");
+	 
+	 imagTag.src= imgPath[index];
+	  
+	
+	}
+
+
+
+
+
+    </script>
+
+
+
+
+	</head>
+
+	<body>
+
+		<div class="container">
+
+			<div class="row">
+   
+				<div class="col-md-12 col-sm-12">
+					<div class="well">
+						<h2 align="center"><font color="blue">A simple website about myself</font></h2>
+					</div>
+				</div> 
+			</div>  
+  
+			<div class="row">
+
+				<div class="col-md-4 col-sm-3">
+
+					<div class="well">
+
+						<img id ="pic" src="Image/chanpa.jpg">
+						<br><br>
+						<button type="button" class="btn btn-success" onclick="next()">Next</button>
+		                <button type="button" class="btn btn-primary" onclick="privious()">Privious</button>
+						<br><br>
+		
+
+						<ul class="nav nav-tabs nav-stacked" role="tablist">
+							<li role="presentation"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
+							<li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Profile</a></li>
+							<li role="presentation"><a href="#portfolio" aria-controls="portfolio" role="tab" data-toggle="tab">Portfolio</a></li>
+							<li role="presentation"><a href="#contact" aria-controls="contact" role="tab" data-toggle="tab">Contact</a></li>
+						</ul>
+					</div>
+				</div>
+	
+	
+	
+				<div class="col-md-8 col-sm-9">
+	
+	                <div class="well">
+	
+	                    <div class="tab-content">
+	   
+	                            <div role="tabpanel" class="tab-pane active" id="home">
+
+									<p><font size="5" color="black">My name is Chanpa Majumder.I am 24years old.Mt hometown is Feni.I have completed my graduation in Computer Science and Telecommunication Engineering form Noakhali Scinec And Technology University.</font></p>
+									<br>
+									<p><font size="5" color="black">My hobby is traveling,reading story book,cooking.watching tv.I have no special quality :(:(.</font></p>
+									<br>
+									<p><font size="5" color="black">My friend circle is very vast.I was enjoyed my whole university life very much,because i have many cuty,lovely,friendly friends.I am very lucky in this case. </font></p>
+	  
+								</div>
+								
+								
+		   
+                                <div role="tabpanel" class="tab-pane active" id="profile"> 
+	
+                                    <h2 align="center"><font size="10" color="blue">About myself</font></h2>
+
+                                       <h3>Name: Chanpa Majumder</h3>
+                                       <br>
+                                       <h3>Father's Name: Kiran Majumder</h3>
+                                       <br>
+                                       <h3>Mother's Name: Baby Majumder</h3>
+                                       <br>
+                                       <h3>Email: chanpacste@gmail.com</h3>
+                                       <br>
+                                       <h3>Mobile No: 01745337125</h3>
+                                       <br>
+                                       <h3>Present Address: 3 no hall,208 no room,BARD,Comilla</h3>
+                                       <br>
+                                       <h3>Bard SL: C-24</h3>
+                                       <br>
+                                       <h3>FTFL ID: 0019185</h3> 
+	
+								</div>
+
+                                <div role="tabpanel" class="tab-pane active" id="portfolio">
+								
+								    <div id="boxmodel">
+                                       <b>Online Hotel Reservation</b>
+                                       <br><br>
+                                       <p>Anyone can booked room by online.This kind of is very useful.For this I have made this Website that can be useful for people</p>
+                                       <br>
+                                       <img src="Image/file.jpeg">   <img src="Image/images.jpg">
+
+                                    </div>
+
+                                    <div id="boxmodel">
+                                      <b>Web Crawlar</b>
+                                      <br>
+                                      <p>This site is works as like as search engine.Like that,I want to read sports news in a newspaper.Then by crawling,web crawler will find out sports news page for the user.This is very useful site</p>
+
+                                      <img src="Image/home.jpg">  <img src="Image/play.jpg">
+                                      </div>
+
+                                </div>
+						
+						        <div role="tabpanel" class="tab-pane active" id="contact">
+								
+								          <h1 align="left"><font size="8" color="Slateblue">Contact Me</font></h1>
+                                          <br><br>
+                                          <form align="left">
+                                          <b>Name:</b><input type="text" name="username">
+                                          <br><br>
+                                          <b>Email ID:</b><input type="text" name="email">
+                                          <br><br>
+                                          <input type="radio" name="sex" value="male" checked><b>Male</b>
+                                          <br>
+                                          <input type="radio" name="sex" value="female"><b>Female</b>
+                                          <br><br>
+                                          <b>Message:</b><textarea name="message" rows="10" cols="30">
+                                          </textarea>
+                                         </form>
+						
+						        </div>
+						
+						</div>
+						
+					</div>
+						
+                </div>
+            
+			</div>
+	
+
+
+
+
+		<div class="row">
+
+			<div class="col-md-12 col-sm-12">
+	
+	        <div class="well">
+	
+               <h4 align="center"><font color="blue">All rights reserved by Chanpa Majumder</font></h4>
+	   
+            </div>
+
+			</div>
+    
+		</div>
+		
+
+		</div>
+	</body>
+</html>
